@@ -37,11 +37,12 @@ const reverseStr3 = str => {
 
 //ES5
 /*function reverseStr3(str) {
-    for (let char of str) {
-        newStr = char + newStr;
-    }
+  var newStr = '';
+  str.split('').forEach(function(el){
+    newStr = el + newStr
+  })
 
-    return newStr;
+  return newStr
 }*/
 
 //ES6 one liner hardly readable
